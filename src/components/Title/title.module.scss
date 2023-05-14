@@ -1,0 +1,28 @@
+@use '/src/style/style.scss' as var;
+
+.title {
+    text-align: center;
+    padding-bottom: 30px;
+    h2 {
+        padding-bottom: 6px;
+        font-size: 40px;
+        color: var.$title-color;
+    }
+    p {
+        font-size: 20px;
+        color: var.$primary-color;
+        padding: 0 8px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .line {
+            display: block;
+            height: 1px;
+            width: 50px;
+            margin: 0 8px;
+            background-color: var.$text-color;
+        }
+    }
+}
+

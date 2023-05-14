@@ -1,0 +1,48 @@
+@use '/src/style/style.scss' as var;
+
+.contact {
+    padding: 50px 0;
+    position: relative;
+    .contactContainer {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        gap: 30px;
+        @include var.breakpoint(md) {
+            grid-template-columns: repeat(1,1fr);
+        }
+        .contactItem {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 360px;
+            border-radius: 6px;
+            padding: 25px;
+            transform: translateY(0);
+            background-color: var.$white-color;
+            box-shadow: 11px 10px 38px 0px rgba(0, 0, 0, 0.1);
+            transition: all .4s;
+            cursor: default;
+            &:hover {
+                transform: translateY(-20px);
+            }
+            svg {
+                font-size: 30px;
+                margin-right: 12px;
+                color: var.$primary-color;
+            }
+            p {
+                color: var.$title-color;
+            }
+        }
+    }
+    .imgCenter {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        width: 500px;
+    }
+}

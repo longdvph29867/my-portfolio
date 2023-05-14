@@ -1,0 +1,108 @@
+@use '/src/style/style.scss' as var;
+
+.banner {
+    margin-top: 100px;
+    position: relative;
+    .bannerContainer {
+        position: relative;
+        min-height: 550px;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        @include var.breakpoint(lg) {
+            flex-direction: column;
+        }
+        .bannerLeft {
+            width: 50%;
+            color: var.$title-color;
+            @include var.breakpoint(lg) {
+                width: 100%;
+                margin-top: 50px;
+            }
+            h3 {
+                font-size: 25px;
+                color: var.$text-color;
+            }
+            h1 {
+                font-size: 65px;
+                margin: 0 0 10px;
+                @include var.breakpoint(md) {
+                    font-size: 60px;
+                }
+                @include var.breakpoint(sm) {
+                    font-size: 50px;
+                }
+            }
+            h2 {
+                font-size: 35px;
+                @include var.breakpoint(md) {
+                    font-size: 32px;
+                }
+                @include var.breakpoint(sm) {
+                    font-size: 28px;
+                }
+                span {
+                    color: var.$primary-color;
+                }
+            }
+            button {
+                @include var.btn;
+                margin-top: 20px;
+            }
+        }
+        .bannerRight {
+            width: 50%;
+            position: relative;
+            @include var.breakpoint(lg) {
+                width: 100%;
+                margin-top: 50px;
+            }
+            .myImg {
+                position: relative;
+                z-index: 1;
+                padding-left: 30px;
+                transform: scale(120%);
+                @include var.breakpoint(lg) {
+                    transform: scale(1);
+                    padding-left: 0;
+                    text-align: center;
+                }
+            }
+            .imgBg {
+                position: absolute;
+                top: -20%;
+                left: 110%;
+                width: 300px;
+            }
+        }
+    }
+    .imgLeft {
+        position: absolute;
+        top: 18%;
+        right: 95%;
+        width: 600px;
+        transform: rotate(145deg);
+    }
+    .imgTop {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        width: 200px;
+        animation: spin 30s linear infinite;
+    }
+    .imgTopleft {
+        position: absolute;
+        top: -24%;
+        right: 80%;
+        width: 500px;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
