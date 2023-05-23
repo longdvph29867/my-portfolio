@@ -55,17 +55,22 @@ header {
         .dropdown {
             display: none;
             cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
             @include var.breakpoint(md) {
                 display: block;
             }
             svg {
                 font-size: 28px;
+                transform: translateY(3px);
             }
         }
     }
     &.sticky {
         background-color: var.$primary-color;
-        padding: 15px 0;
+        padding: 0;
+        height: 70px;
+        display: flex;
+        align-items: center;
         .headerContainer {
             .brand {
                 color: var.$white-color;

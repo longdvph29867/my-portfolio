@@ -21,16 +21,17 @@ export default function BackToTop() {
   return (backToTopButton ? (<button 
     style={{
         position: 'fixed',
-        width:'40px',
-        height:'40px',
-        right:'20px',
-        bottom:'20px',
-        fontSize:'16px',
+        width: 40,
+        height:40,
+        right: 20,
+        bottom: 20,
+        fontSize: 16,
         color:'#fff',
         backgroundColor:'#ffae00',
         border:'none',
-        borderRadius:'8px',
+        borderRadius: 8,
         cursor:'pointer',
+        zIndex: 50
     }}
     onClick={scrollUp}
     >
