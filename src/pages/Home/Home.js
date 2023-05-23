@@ -1,6 +1,5 @@
 import React from 'react'
 import Banner from '../Banner/Banner'
-import Contact from '../Contact/Contact'
 import Header from '../../components/Header/Header'
 import About from '../About/About'
 import Skills from '../Skills/Skills'
@@ -10,10 +9,9 @@ import Footer from '../../components/Footer/Footer'
 import BackToTop from '../../components/BackToTop/BackToTop'
 export default function Home() {
   return (
-    <div>
+    <div id='home'>
       <Header/>
       <Banner/>
-      <Contact/>
       <About/>
       <Skills/>
       <Projects/>

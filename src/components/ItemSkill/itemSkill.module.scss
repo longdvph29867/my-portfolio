@@ -63,3 +63,8 @@
         }
     }
 }
+@for $i from 1 to 7 {
+    .itemSkill:nth-child(#{$i}) {
+        animation-delay: ($i * 0.3s)-0.3s;
+    };
+};

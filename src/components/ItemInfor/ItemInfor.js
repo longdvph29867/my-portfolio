@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import 'animate.css';
+import WOW from 'wowjs';
 import styles from './itemInfor.module.scss'
 export default function ItemInfor({item, className}) {
+  useEffect(() => {
+    const wow = new WOW.WOW();
+    wow.init();
+  }, []);
   return (
-    <div className={`${styles.itemInfor} ${className}`}>
+    <div className={`${styles.itemInfor} ${className} wow animate__animated animate__fadeInRight`}>
         <div className={styles.icon}>
             {item.icon}
         </div>

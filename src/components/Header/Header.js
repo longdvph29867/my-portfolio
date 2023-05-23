@@ -2,9 +2,17 @@ import React, { useEffect, useState } from "react";
 import { Space, Dropdown } from "antd";
 import { AiOutlineMenu } from 'react-icons/ai';
 import styles from './header.module.scss'
+import { Link } from "react-scroll";
 
 export default function Header() {
-  const [headerSticky, setHeaderSticky] = useState(false)
+  const [headerSticky, setHeaderSticky] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
+
+  const handleSetActive = (to) => {
+    setActiveSection(to);
+  };
+
+
   useEffect(() => {
     window.addEventListener('scroll', () => {
       if(window.scrollY > 100) {
@@ -17,11 +25,11 @@ export default function Header() {
   }, [])
   
   const menuList = [
-    { label: "Home", link: "#home" },
-    { label: "About", link: "#about" },
-    { label: "Skills", link: "#skills" },
-    { label: "Projects", link: "#projects" },
-    { label: "Experience", link: "#experience" },
+    { label: "Home", link: "home" },
+    { label: "About", link: "about" },
+    { label: "Skills", link: "skills" },
+    { label: "Projects", link: "projects" },
+    { label: "Experience", link: "experience" },
   ]
   const items = [
     {
@@ -56,7 +64,16 @@ export default function Header() {
             <ul>
               {menuList.map((item, index) => {
                 return (<li key={index}>
-                  <a href={item.link}>{item.label}</a>
+                  <Link
+                  className={activeSection === item.link ? styles.activeNav : ''}
+                  to={item.link}
+                  spy={true}
+                  smooth={true}
+                  duration={0}
+                  onSetActive={handleSetActive}
+                  >
+                    {item.label}
+                  </Link>
                 </li>)
               })}
             </ul>

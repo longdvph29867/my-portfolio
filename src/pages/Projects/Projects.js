@@ -7,6 +7,7 @@ import shoppingCart from '../../assets/shoppingCart.png'
 import movieTickets from '../../assets/movieTickets.png'
 import vlearning from '../../assets/vlearning.png'
 import adminVlearning from '../../assets/adminVlearning.png'
+import samar from '../../assets/samar.png'
 
 export default function Projects() {
   const projectList = [
@@ -37,18 +38,20 @@ export default function Projects() {
     },
     {
       type: "Samar",
-      img: productsManagement,
-      link: "https://samar-neon-mu.vercel.app/",
+      img: samar,
+      link: "https://b41-samar.vercel.app/",
     },
   ];
   return (
-    <div className={styles.projects}>
-      <div className="container">
-        <Title title='ProJects' text='my sample projects' className={styles.title}/>
-        <div className={styles.projectContainer}>
-          {projectList.map((item, index) => {
-            return <ItemProject key={index} item={item}/>
-          })}
+    <div style={{paddingTop: 70}} id='projects'>
+      <div className={styles.projects}>
+        <div className="container">
+          <Title title='ProJects' className={styles.title}/>
+          <div className={styles.projectContainer}>
+            {projectList.map((item, index) => {
+              return <ItemProject key={index} item={item}/>
+            })}
+          </div>
         </div>
       </div>
     </div>

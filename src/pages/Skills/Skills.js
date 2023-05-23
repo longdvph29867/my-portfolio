@@ -40,17 +40,19 @@ export default function Skills() {
   ]
 
   return (
-    <div className={styles.skills}>
-      <div className="container">
-        <Title className={styles.title} title={'Skills'} text={'what i know'}/>
-        <div className={styles.skillsContainer}>
-          {skills.map((item, index) => {
-            return <ItemSkill key={index} item={item}/>
-          })}
+    <div style={{paddingTop: 70}} id='skills'>
+      <div className={styles.skills}>
+        <div className="container">
+          <Title className={styles.title} title={'Skills'}/>
+          <div className={styles.skillsContainer}>
+            {skills.map((item, index) => {
+              return <ItemSkill key={index} item={item}/>
+            })}
+          </div>
         </div>
-      </div>
-      <div className={styles.imgItem}>
-        <img src={imgHome03} alt="" />
+        <div className={styles.imgItem}>
+          <img src={imgHome03} alt="" />
+        </div>
       </div>
     </div>
   )

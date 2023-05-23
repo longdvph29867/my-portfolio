@@ -1,10 +1,11 @@
 import React from "react";
+import 'animate.css';
 import styles from "./banner.module.scss";
 import imgHome06 from '../../assets/home_06.png'
 import imgSlider2 from '../../assets/home_slider_2.png'
 import imgHome01 from '../../assets/home_01.png'
-import myImg from '../../assets/imgbanner.png'
 import imgBg from '../../assets/home_03.png'
+import Contact from "../Contact/Contact";
 
 export default function Banner() {
   return (
@@ -12,14 +13,13 @@ export default function Banner() {
       <div className="container">
         <div className={styles.bannerContainer}>
           <div className={styles.bannerLeft}>
-            <h3>Hello, my name is</h3>
-            <h1>Do Van Long</h1>
-            <h2>I'm <span>FRONT-END DEVELOPER</span></h2>
-            <button>My CV</button>
+            <h3 className="animate__animated animate__fadeInUp">Hello, my name is</h3>
+            <h1 className="animate__animated animate__fadeInUp animate__delay-1s">Do Van Long</h1>
+            <h2 className="animate__animated animate__fadeInUp animate__delay-2s">I'm a <span>FRONT-END DEVELOPER</span></h2>
+            <button className="animate__animated animate__fadeInUp animate__delay-3s">My CV</button>
           </div>
-          <div className={styles.bannerRight}>
+          <div className={`${styles.bannerRight} animate__animated animate__fadeInUp animate__delay-2s`}>
             <div className={styles.myImg}>
-              <img src={myImg} alt="" />
             </div>
             <div className={styles.imgBg}>
               <img src={imgBg} alt="" />
@@ -27,6 +27,7 @@ export default function Banner() {
           </div>
         </div>
       </div>
+      <Contact/>
       <div className={styles.imgLeft}>
         <img src={imgHome06} alt="" />
       </div>

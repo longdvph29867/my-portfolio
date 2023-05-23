@@ -65,7 +65,7 @@
     }
     &:hover {
         .content {
-            transform: translate3d(20px, 20px,-20px);
+            transform: translate(20px, 20px);
             .overlay {
                 opacity: 1;
                 h3 {
@@ -79,3 +79,8 @@
         }
     }
 }
+@for $i from 1 to 7 {
+    .itemProject:nth-child(#{$i}) {
+        animation-delay: ($i * 0.3s)-0.3s;
+    };
+};

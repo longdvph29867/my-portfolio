@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillMail } from 'react-icons/ai';
+import { AiFillMail, AiFillGithub } from 'react-icons/ai';
 import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 import imghome02 from '../../assets/home_02.png'
 import styles from "./contact.module.scss";
@@ -8,15 +8,14 @@ export default function Contact() {
     <div className={styles.contact}>
       <div className="container">
         <div className={styles.contactContainer}>
-            {/* <div className={styles.contactItem}>
+            <div className={styles.contactItem}>
               <div className={styles.contactIcon}>
                 <AiFillGithub/>
               </div>
               <div>
-                <p>https://github.com/dohonganh148</p>
-                <p>https://github.com/dohonganh148</p>
+                <a href="https://github.com/longdvph29867" target={'_black'}>https://github.com/longdvph29867</a>
               </div>
-            </div> */}
+            </div>
             <div className={styles.contactItem}>
               <div className={styles.contactIcon}>
                 <FaPhoneAlt/>

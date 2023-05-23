@@ -8,21 +8,12 @@
         font-size: 40px;
         color: var.$title-color;
     }
-    p {
-        font-size: 20px;
-        color: var.$primary-color;
-        padding: 0 8px;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .line {
-            display: block;
-            height: 1px;
-            width: 50px;
-            margin: 0 8px;
-            background-color: var.$text-color;
-        }
+    hr {
+        width: 8%;
+        margin: 10px auto;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid var.$primary-color;
     }
 }
 
