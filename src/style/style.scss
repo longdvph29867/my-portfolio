@@ -21,7 +21,7 @@ var.$black-color
     border-radius: 6px;
     border: 2px solid $primary-color;
     transition: all .3s ease;
-    box-shadow: 0px 0px 25px 25px $primary-color inset;
+    box-shadow: 0px 0px 50px 50px $primary-color inset;
     &:hover {
         color: $primary-color;
         box-shadow: 0px 0px 0px 0px $primary-color inset;
