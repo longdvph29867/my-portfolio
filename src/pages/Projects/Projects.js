@@ -29,17 +29,17 @@ export default function Projects() {
     {
       type: "Shopping Cart",
       img: shoppingCart,
-      link: "https://capstone-js-nhom9-assets.vercel.app",
+      link: "https://shopping-cart-rose-alpha.vercel.app/",
     },
     {
       type: "Products Management System",
       img: productsManagement,
-      link: "https://capstone-js-nhom9-app.vercel.app",
+      link: "https://products-management-one.vercel.app/",
     },
     {
       type: "Samar",
       img: samar,
-      link: "https://b41-samar.vercel.app/",
+      link: "https://samar-ruddy.vercel.app/",
     },
   ];
   return (
