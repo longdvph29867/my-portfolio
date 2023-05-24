@@ -16,7 +16,7 @@ export default function Banner() {
             <h3 className="animate__animated animate__fadeInUp">Hello, my name is</h3>
             <h1 className="animate__animated animate__fadeInUp animate__delay-1s">Do Van Long</h1>
             <h2 className="animate__animated animate__fadeInUp animate__delay-2s">I'm a <span>FRONT-END DEVELOPER</span></h2>
-            <button className="animate__animated animate__fadeInUp animate__delay-3s">My CV</button>
+            <a href="https://www.topcv.vn/xem-cv/VlUJBgIEVgRRAApUAFNQV1FRBwMMU1dTBFRVUQ6e7e" target='black' className="animate__animated animate__fadeInUp animate__delay-3s">My CV</a>
           </div>
           <div className={`${styles.bannerRight} animate__animated animate__fadeInUp animate__delay-2s`}>
             <div className={styles.myImg}>

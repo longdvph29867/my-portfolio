@@ -46,9 +46,10 @@
                     color: var.$primary-color;
                 }
             }
-            button {
+            a {
                 @include var.btn;
                 margin-top: 20px;
+                display: inline-block;
             }
         }
         .bannerRight {

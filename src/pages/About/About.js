@@ -36,9 +36,9 @@ export default function About() {
                 in HTML, SCSS, ES6,...
               </p>
               <div className={styles.aboutBtn}>
-                <button>
+                <a href="https://www.topcv.vn/xem-cv/VlUJBgIEVgRRAApUAFNQV1FRBwMMU1dTBFRVUQ6e7e" target='black'>
                   <FaDownload /> Download Resume
-                </button>
+                </a>
               </div>
             </div>
           </div>

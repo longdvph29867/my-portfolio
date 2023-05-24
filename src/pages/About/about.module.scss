@@ -57,8 +57,9 @@
             .aboutBtn {
                 text-align: center;
                 padding-top: 10px;
-                button {
+                a {
                     @include var.btn;
+                    display: inline-block;
                 }
             }
         }
