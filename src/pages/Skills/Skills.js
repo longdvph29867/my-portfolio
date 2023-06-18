@@ -30,7 +30,7 @@ export default function Skills() {
     {
       icon: <SlSupport />,
       title: "FOREIGN LANGUAGE",
-      desc: ["English: intermediate"],
+      desc: ["English: intermediate", "Japanese: N5"],
     },
     {
       icon: <FiUsers />,
