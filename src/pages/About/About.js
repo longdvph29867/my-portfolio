@@ -32,7 +32,7 @@ export default function About() {
               <p>
                 I can work with ReactJS and Javascript at a basic level. I'm
                 trying to learn more day by day to become more proficient. Good
-                communication and always listen to people. I also help experience
+                communication and always listen to people. I also have experience
                 in HTML, SCSS, ES6,...
               </p>
               <div className={styles.aboutBtn}>
