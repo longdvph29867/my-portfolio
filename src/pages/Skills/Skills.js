@@ -16,12 +16,17 @@ export default function Skills() {
     {
       icon: <SlAnchor />,
       title: "PROGRAMING LANGUAGE",
-      desc: ["HTML/CSS/SASS", "Javascript", "ES6"],
+      desc: ["HTML/CSS/SASS", "Javascript(ES6)", "Typescript"],
     },
     {
       icon: <SlEqualizer />,
       title: "FRAMEWORKS & LIBRARIES",
-      desc: ["ReactJS/Redux", "Bootstrap/Ant Design", "Restful API/JSON"],
+      desc: [
+        "ReactJS/Redux",
+        "Angular",
+        "Node.js",
+        "Bootstrap/Ant Design/Tailwind",
+      ],
     },
     {
       icon: <SlMicrophone />,
@@ -30,8 +35,8 @@ export default function Skills() {
     },
     {
       icon: <SlLayers />,
-      title: "IDE",
-      desc: ["Visual code"],
+      title: "Tools, DATABASES & IDE",
+      desc: ["MongoDB", "Docker", "Visual code"],
     },
     {
       icon: <SlSupport />,

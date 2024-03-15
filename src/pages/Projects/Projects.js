@@ -8,9 +8,26 @@ import movieTickets from "../../assets/movieTickets.png";
 import vlearning from "../../assets/vlearning.png";
 import adminVlearning from "../../assets/adminVlearning.png";
 import samar from "../../assets/samar.png";
-
+import clothesShop from "../../assets/clothes-shop.png";
+import movieFpoly from "../../assets/movieFpoly.png";
+import movieFpolyApi from "../../assets/movieFpolyApi.png";
 export default function Projects() {
   const projectList = [
+    {
+      type: "Movie Fpoly",
+      img: movieFpoly,
+      link: "http://moviefpoly.com",
+    },
+    {
+      type: "Movie Fpoly Api",
+      img: movieFpolyApi,
+      link: "http://moviefpoly.com:8000/v1/docs/",
+    },
+    {
+      type: "Clothes Shop",
+      img: clothesShop,
+      link: "https://clothes-shop-kappa.vercel.app/",
+    },
     {
       type: "Vlearning",
       img: vlearning,
