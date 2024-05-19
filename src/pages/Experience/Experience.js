@@ -16,7 +16,7 @@ export default function Experience() {
     {
       icon: <FaGraduationCap />,
       title: "WEB ENGINEERING STUDENT",
-      year: "08/2022 - 01/2024",
+      year: "08/2021 - 01/2024",
       inst: "FPT POLYTECHNIC",
       desc: "GPA: 9.2/10",
     },
