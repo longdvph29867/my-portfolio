@@ -6,13 +6,13 @@ import Title from "../../components/Title/Title";
 import styles from "./experience.module.scss";
 export default function Experience() {
   const infor = [
-    {
-      icon: <FaBriefcase />,
-      title: "WEB DEVELOPER",
-      year: "06/2023 - Present",
-      inst: "Viettel",
-      desc: "Working as a web developer, focusing on developing and maintaining web applications.",
-    },
+    // {
+    //   icon: <FaBriefcase />,
+    //   title: "WEB DEVELOPER",
+    //   year: "06/2023 - Present",
+    //   inst: "Viettel",
+    //   desc: "Working as a web developer, focusing on developing and maintaining web applications.",
+    // },
     {
       icon: <FaGraduationCap />,
       title: "WEB ENGINEERING STUDENT",
